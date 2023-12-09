@@ -8,15 +8,15 @@ import java.util.regex.Pattern;
 public class Day1 extends Day {
     @Override
     public String part1() {
-        return String.valueOf(getInput().stream().mapToInt(Day1::getLineIntegers).sum());
+        return String.valueOf(getInput().stream().mapToInt(this::getLineIntegers).sum());
     }
 
     @Override
     public String part2() {
-        return String.valueOf(getInput().stream().mapToInt(Day1::getLineNumbers).sum());
+        return String.valueOf(getInput().stream().mapToInt(this::getLineNumbers).sum());
     }
 
-    protected static int getLineNumbers(final String line) {
+    protected int getLineNumbers(final String line) {
         final String regex = "(?=(\\d|one|two|three|four|five|six|seven|eight|nine))";
         Pattern pattern = Pattern.compile(regex);
         Matcher match = pattern.matcher(line);
@@ -30,7 +30,7 @@ public class Day1 extends Day {
         );
     }
 
-    private static char getNumber(final String number) {
+    protected char getNumber(final String number) {
         if (number.matches("[1-9]")) return number.toCharArray()[0];
         return switch (number) {
             case "one" -> '1';
@@ -46,13 +46,13 @@ public class Day1 extends Day {
         };
     }
 
-    protected static int getLineIntegers(final String line) {
+    protected int getLineIntegers(final String line) {
         String str = line.replaceAll("[^1-9]", "");
         if (str.isEmpty()) return 0;
         return getFormattedNumbers(str.charAt(0), str.charAt(str.length() - 1));
     }
 
-    private static int getFormattedNumbers(final char first, final char last) {
+    protected int getFormattedNumbers(final char first, final char last) {
         String numbers = String.format("%s%s", first, last);
         return Integer.parseInt(numbers);
     }

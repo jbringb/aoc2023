@@ -20,7 +20,8 @@ public class ProblemSolver {
 
     private List<DayRecord> getDays() {
         return List.of(
-                new DayRecord(1, "Trebuchet?!", new Day1())
+                new DayRecord(1, "Trebuchet?!", new Day1()),
+                new DayRecord(2, "Cube Conundrum", new Day2())
         );
     }
 
