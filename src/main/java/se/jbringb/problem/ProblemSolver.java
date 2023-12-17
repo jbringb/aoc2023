@@ -11,7 +11,7 @@ public class ProblemSolver {
                 .orElse(null);
 
         if (dayRecord == null) {
-            System.out.printf("Problem for day %d does not exist!%n", day);
+            System.out.printf("Problem for day %d does not exist (yet...)!%n", day);
             return;
         }
 
@@ -21,7 +21,9 @@ public class ProblemSolver {
     private List<DayRecord> getDays() {
         return List.of(
                 new DayRecord(1, "Trebuchet?!", new Day1()),
-                new DayRecord(2, "Cube Conundrum", new Day2())
+                new DayRecord(2, "Cube Conundrum", new Day2()),
+                new DayRecord(3, "Gear Ratios", new Day3()),
+                new DayRecord(4, "Scratchcards", new Day4())
         );
     }
 
