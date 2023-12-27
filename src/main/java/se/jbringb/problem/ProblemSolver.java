@@ -26,7 +26,10 @@ public class ProblemSolver {
                 new DayRecord(4, "Scratchcards", new Day4()),
                 new DayRecord(5, "Scratchcards", new Day5()),
                 new DayRecord(6, "Wait For It", new Day6()),
-                new DayRecord(7, "Camel Cards", new Day7())
+                new DayRecord(7, "Camel Cards", new Day7()),
+                new DayRecord(8, "Haunted Wasteland", new Day8()),
+                new DayRecord(9, "Mirage Maintenance", new Day9()),
+                new DayRecord(10, "Pipe Maze", new Day10())
         );
     }
 
