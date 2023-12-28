@@ -24,7 +24,7 @@ public class ProblemSolver {
                 new DayRecord(2, "Cube Conundrum", new Day2()),
                 new DayRecord(3, "Gear Ratios", new Day3()),
                 new DayRecord(4, "Scratchcards", new Day4()),
-                new DayRecord(5, "Scratchcards", new Day5()),
+                new DayRecord(5, "If You Give A Seed A Fertilizer", new Day5()),
                 new DayRecord(6, "Wait For It", new Day6()),
                 new DayRecord(7, "Camel Cards", new Day7()),
                 new DayRecord(8, "Haunted Wasteland", new Day8()),
