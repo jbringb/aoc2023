@@ -29,7 +29,10 @@ public class ProblemSolver {
                 new DayRecord(7, "Camel Cards", new Day7()),
                 new DayRecord(8, "Haunted Wasteland", new Day8()),
                 new DayRecord(9, "Mirage Maintenance", new Day9()),
-                new DayRecord(10, "Pipe Maze", new Day10())
+                new DayRecord(10, "Pipe Maze", new Day10()),
+                new DayRecord(11, "Cosmic Expansion", new Day11()),
+                new DayRecord(14, "Parabolic Reflector Dish", new Day14()),
+                new DayRecord(15, "Lens Library", new Day15())
         );
     }
 
