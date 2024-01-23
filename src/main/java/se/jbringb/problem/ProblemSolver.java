@@ -32,7 +32,10 @@ public class ProblemSolver {
                 new DayRecord(10, "Pipe Maze", new Day10()),
                 new DayRecord(11, "Cosmic Expansion", new Day11()),
                 new DayRecord(14, "Parabolic Reflector Dish", new Day14()),
-                new DayRecord(15, "Lens Library", new Day15())
+                new DayRecord(15, "Lens Library", new Day15()),
+                new DayRecord(16, "The Floor Will Be Lava", new Day16()),
+                new DayRecord(17, "Clumsy Crucible", new Day17()),
+                new DayRecord(18, "Lavaduct Lagoon", new Day18())
         );
     }
 
